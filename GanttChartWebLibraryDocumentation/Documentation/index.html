@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="Documentation" ng-controller="MainController">
+<head id="head">
+    <title>Documentation - Gantt Chart Web Library - DlhSoft</title>
+    <link href="http://DlhSoft.com/assets/css/app.min.css" rel="stylesheet">
+    <link href="http://DlhSoft.com/assets/css/custom.css" rel="stylesheet">
+    <link href="http://DlhSoft.com/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://DlhSoft.com/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://DlhSoft.com/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://DlhSoft.com/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://DlhSoft.com/css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://DlhSoft.com/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <link href="http://DlhSoft.com/Styles/Customizations.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="app.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://DlhSoft.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://DlhSoft.com/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="Scripts/DlhSoft.Data.HTML.Controls.js"></script>
+    <script type="text/javascript" src="Scripts/DlhSoft.ProjectData.GanttChart.HTML.Controls.js"></script>
+    <script type="text/javascript" src="Scripts/DlhSoft.ProjectData.GanttChart.HTML.Controls.Extras.js"></script>
+    <script type="text/javascript" src="Scripts/DlhSoft.ProjectData.GanttChart.Angular.Directives.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="http://DlhSoft.com/assets/js/app.min.js"></script>
+    <script type="text/javascript" src="http://DlhSoft.com/assets/js/custom.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="DlhSoft" />
+    <meta name="keywords" content="Documentation, reference" />
+    <meta name="description" content="Documentation for DlhSoft Gantt Chart Web Library." />
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="bg-dark">
+            <div class="nav-bar">
+                <div class="module left">
+                    <a href="http://DlhSoft.com/index.html" target="_blank">
+                        <img class="logo logo-light" alt="logo" src="http://DlhSoft.com/Images/Logo-light.png">
+                    </a>
+                </div>
+                <div class="module-group right">
+                    <div class="module left">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">Documentation</a> 
+                                – 
+                                <a href="http://DlhSoft.com/GanttChartWebLibrary" target="_blank">Gantt Chart Web Library</a>
+                            </li>
+                            <li>
+                                <a href="http://DlhSoft.com/GanttChartWebLibrary/Download.aspx" target="_blank">Downloads</a>
+                            </li>
+                            <li>
+                                <a href="http://DlhSoft.com/GanttChartWebLibrary/Purchase.aspx" target="_blank">Order licenses</a>
+                            </li>
+                            <li>
+                                <a href="http://DlhSoft.com/GanttChartWebLibrary/Support.aspx" target="_blank">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-container">
+        <div class="row hidden-sm hidden-xs">
+            <div class="col-sm-12">
+                <div class="nav-container">
+                    <nav class="bg-secondary">
+                        <div class="nav-bar nav-secondary">
+                            <div class="module-group right">
+                                <div class="module left">
+                                    <ul class="menu">
+                                        <li>
+                                            <a class="color-primary" href="javascript:">Start</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="module widget-handle left">
+                                    <ul class="menu">
+                                        <li title="Reference">
+                                            <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_GanttChartView.htm" target="_blank">Gantt chart</a>
+                                        </li>
+                                        <li title="Reference">
+                                            <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_ScheduleChartView.htm" target="_blank">Schedule chart</a>
+                                        </li>
+                                        <li title="Reference">
+                                            <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_LoadChartView.htm" target="_blank">Load chart</a>
+                                        </li>
+                                        <li title="Reference">
+                                            <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_Pert_PertChartView.htm" target="_blank">PERT chart</a>
+                                        </li>
+                                        <li title="Reference">
+                                            <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_Pert_NetworkDiagramView.htm" target="_blank">Network diagram</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-right" href="javascript:">More</a>
+                                            <ul>
+                                                <li title="Reference">
+                                                    <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_Schedule.htm" target="_blank">Schedule</a>
+                                                </li>
+                                                <li title="Reference">
+                                                    <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_Column.htm" target="_blank">Column definition</a>
+                                                </li>
+                                                <li title="Reference">
+                                                    <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/Reference/html/AllMembers_T_DlhSoft_Web_UI_WebControls_Scale.htm" target="_blank">Scale definition</a>
+                                                </li>
+                                                <li title="Gantt Chart Hyper Library">
+                                                    <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartHyperLibrary/Documentation/index.html?Gantt-chart" target="_blank">Client side</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="module widget-handle left">
+                                    <ul class="menu">
+                                        <li>
+                                            <a class="technology-menu-item text-right" href="javascript:">ASP .NET + HTML5 (JS)</a>
+                                            <ul>
+                                                <li>
+                                                    <a class="selected-menu-item" href="javascript:">ASP .NET + HTML5 (JS)</a>
+                                                </li>
+                                                <li title="Extensions">
+                                                    <a href="http://DlhSoft.com/GoTo.aspx?Url=GanttChartWebLibrary/Documentation/SharePoint/Documentation.htm" target="_blank">SharePoint®</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Get started</h2>
+                            <p>
+                                Get and apply the software library to your project using the <a href="http://DlhSoft.com/GoTo.aspx?Url=http://NuGet.org/Packages/DlhSoft.GanttChartWebLibrary" target="_blank">NuGet package</a>.
+                            </p>
+                            <p>
+                                Add the necessary DlhSoft.* assembly references to your application project from Solution Explorer section of Visual Studio®.
+                                Reference the appropriate namespaces in code with Register elements and/or using clauses in code behind: 
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-markup (ASPX)" ng-non-bindable>
+&lt;%@ Register TagPrefix="pdgcc" Namespace="DlhSoft.Web.UI.WebControls" 
+                               Assembly="DlhSoft.ProjectData.GanttChart.ASP.Controls" %&gt;
+</code>
+                                </pre>
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+using DlhSoft.Web.UI.WebControls;
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                Add the required control instances as child nodes of appropriate container elements or create component objects in code behind:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-markup (XAML)" ng-non-bindable>
+&lt;pdgcc:GanttChartView ID="GanttChartView" runat="server" … /&gt;
+</code>
+                                </pre>
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+var ganttChartView = new GanttChartView { … };
+Page.Controls.Add(ganttChartView);
+</code>
+                                </pre>
+                            </div>
+                            <h2>Data items</h2>
+                            <p>
+                                To load and present data items within GanttChartView or other Gantt Chart based component instances initialize their Items collections (with a single setter or Add method calls).
+                                The item type to use depends on the actual component type. For Gantt Chart controls define GanttChartItem objects providing these properties:
+                            </p>
+                            <ul>
+                                <li>Content values usually specify task names;</li>
+                                <li>Start and Finish date and time values indicate the scheduled times of their displayed bars;</li>
+                                <li>CompletedFinish date and time values specify the schedule times of their completion displayed bars (indicating completion percentages);</li>
+                                <li>IsMilestone Boolean values determine the project milestones that are presented as diamond shapes in the chart;</li>
+                                <li>AssignmentsContent values specify indicate the assigned resource names of each task, separated by commas;</li>
+                                <li>Indentation values generate the hierarchical work breakdown structure of the project (summary and standard tasks).</li>
+                            </ul>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+var item1 = new GanttChartItem { Content = "My summary task" };
+var item2 = new GanttChartItem { Content = "My standard task", Indentation = 1,
+                                 Start = DateTime.Today, Finish = DateTime.Today.AddDays(5), CompletedFinish = DateTime.Today.AddDays(3),
+                                 AssignmentsContent = "My resource" };
+GanttChartView.Items = new ObservableCollection&lt;GanttChartItem&gt; { item1, item2 };
+var item3 = new GanttChartItem { Content = "My milestone", Indentation = 1,
+                                 IsMilestone = true };
+GanttChartView.Items.Add(item3);
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To initialize dependencies between Gantt Chart bars, use the successor item’s Predecessors collection.
+                                The referred Item is determined by reference within the component’s Items collection.
+                                DependencyType enumeration supports all common types of task links:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+item3.Predecessors.Add(new PredecessorItem { Item = item2, DependencyType = DependencyType.FinishFinish });
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                You may supplementary customize items using their CustomValues dictionaries, if needed:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+item.CustomValues["Description"] = "My task’s description";
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To customize the displayed grid columns, use the Columns property of the component.
+                                By design, the Content column type displays data hierarchically.
+                                You may also prepare new or updated Column objects referring custom values by PropertyName or using JavaScript® statements referring item values as defined by CellTemplateClientCode:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.Columns[(int)ColumnType.Content].Header = "Work items"; 
+GanttChartView.Columns[(int)ColumnType.Content].Width = 240; 
+GanttChartView.Columns[(int)ColumnType.Start].  Header = "Beginning"; 
+GanttChartView.Columns[(int)ColumnType.Finish]. Header = "End";
+GanttChartView.Columns.Add(new Column { Header = "Description", Width = 200, PropertyName = "Description" });
+GanttChartView.Columns.Add(new Column { Header = "Description", Width = 200, 
+                                        CellTemplateClientCode = "return window.document.createTextNode(item.customDescriptionValue);" });
+</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Timeline definition</h2>
+                            <p>
+                                To specify the scrollable timeline and the zoom level of the chart:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.SetTimeline(start, finish);
+GanttChartView.HourWidth = zoomLevel;
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To specify the time schedule displayed and used by default by the control:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.WorkingWeekStart  = DayOfWeek.Monday;
+GanttChartView.WorkingWeekFinish = DayOfWeek.Friday;
+GanttChartView.VisibleWeekStart  = DayOfWeek.Sunday;
+GanttChartView.VisibleWeekFinish = DayOfWeek.Saturday;
+GanttChartView.VisibleDayStart   = TimeOfDay.Parse("09:00:00"); // 9 AM
+GanttChartView.VisibleDayFinish  = TimeOfDay.Parse("17:00:00"); // 5 PM
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                Alternatively, you can use Schedule objects, which are supported also at task item level:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.Schedule = new Schedule(workingWeekStart: DayOfWeek.Monday, workingWeekFinish: DayOfWeek.Friday …);
+item.Schedule           = new Schedule(…);
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To set up the scales displayed by the control use the Scales collection. The Scale objects define their type, header texts, and separator lines.
+                                Weeks scales are displayed as starting on the day of week defined by the current culture (CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek).
+                                Finally, if you change the scale count, update the HeaderHeight value accordingly:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.Scales = new List&lt;Scale&gt;
+{
+    new Scale { ScaleType = ScaleType.Months, HeaderTextFormat = ScaleHeaderTextFormat.Month, IsSeparatorVisible = true },
+    new Scale { ScaleType = ScaleType.Weeks,  HeaderTextFormat = ScaleHeaderTextFormat.Date,  IsSeparatorVisible = true },
+    new Scale { ScaleType = ScaleType.Days,   HeaderTextFormat = ScaleHeaderTextFormat.Day }
+};
+GanttChartView.HeaderHeight = 21 * 3;
+</code>
+                                </pre>
+                            </div>
+                            <h2>Appearance</h2>
+                            <p>
+                                To configure the look of the Gantt Chart bars (alternative CssClass properties are also available):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.StandardBarFill            = Color.LightGreen;
+GanttChartView.StandardBarStroke          = Color.Green;
+GanttChartView.StandardCompletedBarFill   = Color.DarkGreen;
+GanttChartView.StandardCompletedBarStroke = Color.DarkGreen;
+GanttChartView.SummaryBarFill             = Color.DarkGreen;
+GanttChartView.SummaryBarStroke           = Color.DarkGreen;
+GanttChartView.MilestoneBarFill           = Color.DarkGreen;
+GanttChartView.MilestoneBarStroke         = Color.DarkGreen;
+GanttChartView.DependencyLineStroke       = Color.Green;
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                You may also initialize individual item appearance settings:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+item1.StandardBarFill = Color.LightGreen;
+item2.StandardBarFill = Color.Brown;
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                Alternatively or supplementary, you can configure the bar, dependency line, and tool tip templates using JavaScript® based client side statements (see <a href="http://DlhSoft.com/GanttChartWebLibrary/Documentation/Samples/ASP%20.NET/GanttChartViewSample.zip">Demo source code</a>):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.StandardTaskTemplateClientCode    = "…"; 
+GanttChartView.SummaryTaskTemplateClientCode     = "…"; 
+GanttChartView.MilestoneTaskTemplateClientCode   = "…"; 
+GanttChartView.ExtraTaskTemplateClientCode       = "…"; 
+GanttChartView.AssignmentsTemplateClientCode     = "…"; 
+GanttChartView.DependencyLineTemplateClientCode  = "…"; 
+GanttChartView.ItemTemplateClientCode            = "…"; // Task bar tool tip
+GanttChartView.PredecessorItemTemplateClientCode = "…"; // Dependency line tool tip
+</code>
+                                </pre>
+                            </div>
+                            <h2>More settings</h2>
+                            <p>
+                                To set up assignable resources and define their costs (see <a href="http://DlhSoft.com/GanttChartWebLibrary/Documentation/Samples/ASP%20.NET/GanttChartViewSample.zip">Demo source code</a>):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.AssignableResources       = …; 
+GanttChartView.ResourceQuantities        = …; 
+GanttChartView.SpecificResourceHourCosts = …;
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To further configure the look and feel, behavior, and other aspects of the components use their other member properties (see <a href="http://DlhSoft.com/GanttChartWebLibrary/Documentation/Samples/ASP%20.NET/GanttChartViewSample.zip">Demo source code</a>):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.AreTaskDependencyConstraintsEnabled = true;
+GanttChartView.IsMouseWheelZoomEnabled = false; 
+GanttChartView.UpdateScaleInterval = TimeSpan.FromHours(1); 
+GanttChartView.IsBaselineVisible = true;
+GanttChartView.AlternativeRowBackColor = Color.Silver;
+</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Hierarchical operations</h2>
+                            <p>
+                                To get the root tasks from the managed collection:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+foreach (var root in GanttChartView.GetRoots()) { … }; 
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To get the parent, or enumerate ascendants, children, or descendants of a specific task item:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+var parent = GanttChartView.GetParent(item);
+foreach (var ascendant in GanttChartView.GetAllParents(item))   { … };
+foreach (var child in GanttChartView.GetChildren(item))         { … };
+foreach (var descendant in GanttChartView.GetAllChildren(item)) { … };
+</code>
+                                </pre>
+                            </div>
+                            <h2>Project management</h2>
+                            <p>
+                                To reschedule tasks so that project work is fully optimized or assigned resources are not over-allocated:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.OptimizeWork();
+GanttChartView.LevelResources();
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To enumerate critical tasks (those that by rescheduling might affect the finish date and time of the project):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+foreach (var item in GanttChartView.GetCriticalItems()) { … };
+</code>
+                                </pre>
+                            </div>
+                            <h2>Importing, exporting, and printing</h2>
+                            <p>
+                                To import or export project data from or to Microsoft® Project® XML files (an alternative ProjectXmlSerializer class is also available if you need advanced control during serialization and deserialization):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.LoadProjectXml(inputStream);
+GanttChartView.SaveProjectXml(outputStream);
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                To send the Gantt Chart and associated data grid content of specified columns to the printer (allowing the end user to select the printing settings), optionally rotating the output to generate landscape output by default:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.Print("My document", columnIndexes: new int[] {(int)ColumnType.Content, (int)ColumnType.Finish}, rotate: true);
+</code>
+                                </pre>
+                            </div>
+                            <h2>More operations</h2>
+                            <p>
+                                To display the current items from a Gantt Chart control in different way using a Schedule Chart (see <a href="http://DlhSoft.com/GanttChartWebLibrary/Documentation/Samples/ASP%20NET/GanttChartViewSample.zip">Demo source code</a>):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+ScheduleChartView.Items = GanttChartView.GetScheduleChartItems();
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                Other member methods and events are available to provide advanced operations with the components and the data items they manage (see <a href="http://DlhSoft.com/GanttChartWebLibrary/Documentation/Samples/ASP%20NET/GanttChartViewSample.zip">Demo source code</a>):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.MoveItem(item, toIndex, includeChildren: false);
+GanttChartView.MoveItemUp(item, includeChildren: true, withinParent: true);
+GanttChartView.MoveItemDown(item, includeChildren: true, withinParent: true);
+var projectCost = GanttChartView.GetProjectCost();
+var finish      = GanttChartView.GetProjectFinish();
+GanttChartView.ItemPropertyChanged += (sender, e) { … }; 
+GanttChartView.SelectionChanged    += (sender, e) { … };
+GanttChartView.ItemPropertyChangeHandlerClientCode  = "…"; 
+GanttChartView.ItemSelectionChangeHandlerClientCode = "…";
+</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

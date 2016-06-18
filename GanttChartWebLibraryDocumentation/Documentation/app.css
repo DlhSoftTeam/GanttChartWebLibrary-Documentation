@@ -1,0 +1,44 @@
+﻿.nav-secondary .module.widget-handle.left {
+    margin-right: 8px;
+}
+.technology-menu-item {
+    width: 140px;
+}
+.selected-menu-item {
+    opacity: 1 !important;
+}
+section h2 {
+    margin-top: 64px;
+}
+section h2:first-child {
+    margin-top: auto;
+}
+section h3 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+section p {
+    margin-bottom: 8px;
+}
+section ul {
+    margin-top: 0;
+    list-style: initial;
+    list-style-position: hanging;
+}
+section li {
+    margin-left: 24px;
+    padding-left: 8px;
+    margin-top: 4px;
+}
+section em {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    font-style: normal;
+    color: #dd4a68;
+}
+section .code-snippet {
+    margin-top: 16px;
+}
+section pre {
+    padding-bottom: 0 !important;
+}
