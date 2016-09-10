@@ -458,6 +458,31 @@ GanttChartView.Print("My document", columnIndexes: new int[] {(int)ColumnType.Co
 </code>
                                 </pre>
                             </div>
+                            <h2>Handling events</h2>
+                            <p>
+                                You may run custom code upon specific item changes, either on server side or on client side (using JavaScript® statements):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.ItemPropertyChanged += (sender, e) { … }; 
+GanttChartView.SelectionChanged    += (sender, e) { … };
+GanttChartView.ItemPropertyChangeHandlerClientCode  = "…"; 
+GanttChartView.ItemSelectionChangeHandlerClientCode = "…";
+</code>
+                                </pre>
+                            </div>
+                            <p>
+                                Other types of changes also provide client side notifications:
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-csharp" ng-non-bindable>
+GanttChartView.HourWidthChangeHandlerClientCode     = "…"; // Zoom level changed
+GanttChartView.DisplayedTimeChangeHandlerClientCode = "…"; // Chart date scroll changed
+</code>
+                                </pre>
+                            </div>
                             <h2>More operations</h2>
                             <p>
                                 To display the current items from a Gantt Chart control in different way using a Schedule Chart (see <a href="http://DlhSoft.com/GanttChartWebLibrary/Documentation/Samples/ASP%20NET/GanttChartViewSample.zip">Demo source code</a>):
@@ -480,10 +505,6 @@ GanttChartView.MoveItemUp(item, includeChildren: true, withinParent: true);
 GanttChartView.MoveItemDown(item, includeChildren: true, withinParent: true);
 var projectCost = GanttChartView.GetProjectCost();
 var finish      = GanttChartView.GetProjectFinish();
-GanttChartView.ItemPropertyChanged += (sender, e) { … }; 
-GanttChartView.SelectionChanged    += (sender, e) { … };
-GanttChartView.ItemPropertyChangeHandlerClientCode  = "…"; 
-GanttChartView.ItemSelectionChangeHandlerClientCode = "…";
 </code>
                                 </pre>
                             </div>
