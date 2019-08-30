@@ -149,8 +149,7 @@
                             </p>
                             <p>
                                 Add the necessary DlhSoft.* assembly references to your application project from Solution Explorer section of Visual Studio®.
-                                (If you used NuGet to get the DlhSoft assemblies in a .NET 4.5+ environment, both *.ASP.*, targeting ASP .NET WebForms and *.MVC.*, targeting ASP .NET MVC, assemblies are added; keep only the ones that target your project's platform - MVC - and remove the others.)
-                                Reference the appropriate namespaces in code with using clauses: 
+                                Reference the appropriate namespaces in code with using clauses:
                             </p>
                             <div class="code-snippet">
                                 <pre class="line-numbers">
@@ -159,6 +158,29 @@ using DlhSoft.Web.Mvc;
 </code>
                                 </pre>
                             </div>
+                            <p class="color-primary">
+                                Note: If you used NuGet to get the DlhSoft assemblies in a .NET Framework 4.5+ environment, both *.ASP.*, targeting ASP .NET WebForms and *.MVC.*, targeting ASP .NET MVC, assemblies are added; keep only the ones that target your project's platform - MVC - and remove the others, or compilation error messages may appear.
+                            </p>
+                            <br />
+                            <p>
+                                Add the necessary DlhSoft.* script references to the head section(s) of HTML content in your ASP .NET MVC based application (e.g. in <em>_Shared/Layout.cshtml</em> file):
+                            </p>
+                            <div class="code-snippet">
+                                <pre class="line-numbers">
+<code class="language-markup" ng-non-bindable>
+&lt;head&gt;
+&nbsp;&nbsp;…
+&nbsp;&nbsp;&lt;script src="/Scripts/DlhSoft.ProjectData.GanttChart.HTML.Controls.js" type="text/javascript"&gt;&lt;/script&gt;
+&nbsp;&nbsp;&lt;script src="/Scripts/DlhSoft.Data.HTML.Controls.js" type="text/javascript"&gt;&lt;/script&gt;
+&nbsp;&nbsp;&lt;script src="/Scripts/DlhSoft.ProjectData.GanttChart.HTML.Controls.Extras.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code>
+                                </pre>
+                            </div>
+                            <p class="color-primary">
+                                Note: For an ASP .NET Core app script source files are copied at build time to <em>wwwroot/js</em> folder (therefore, replace <em>/Scripts</em> with <em>~/js</em> after pasting the snippet above.)
+                            </p>
+                            <br />
                             <p>
                                 Use HTML extensions to generate client side components in code behind:
                             </p>
@@ -403,7 +425,7 @@ public ActionResult UpdateGanttChartItem(GanttChartItem item)
 {
     // Placeholder for saving changes to database.
     Debug.WriteLine($"Item {item.Content} at index {item.ItemIndex} has been updated.");
-    return new HttpStatusCodeResult(HttpStatusCode.OK);
+    return new HttpStatusCodeResult(HttpStatusCode.OK); // or: return Ok();
 }
 </code>
                                 </pre>
