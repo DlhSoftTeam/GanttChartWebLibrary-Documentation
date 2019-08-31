@@ -152,8 +152,7 @@
                             </p>
                             <p>
                                 Add the necessary DlhSoft.* assembly references to your application project from Solution Explorer section of Visual Studio®.
-                                (If you used NuGet to get the DlhSoft assemblies in a .NET 4.5+ environment, both *.ASP.*, targeting ASP .NET WebForms and *.MVC.*, targeting ASP .NET MVC, assemblies are added; keep only the ones that target your project's platform - ASP - and remove the others.)
-                                Reference the appropriate namespaces in code with Register elements and/or using clauses in code behind: 
+                                Reference the appropriate namespaces in code with Register elements and/or using clauses in code behind:
                             </p>
                             <div class="code-snippet">
                                 <pre class="line-numbers">
@@ -168,6 +167,10 @@ using DlhSoft.Web.UI.WebControls;
 </code>
                                 </pre>
                             </div>
+                            <p class="color-primary">
+                                Note: If you used NuGet to get the DlhSoft assemblies in a .NET Framework 4.5+ environment, both *.ASP.*, targeting ASP .NET WebForms and *.MVC.*, targeting ASP .NET MVC, assemblies are added; keep only the ones that target your project's platform - MVC - and remove the others, or compilation error messages may appear.
+                            </p>
+                            <br />
                             <p>
                                 Add the required control instances as child nodes of appropriate container elements or create component objects in code behind:
                             </p>
